@@ -1,6 +1,6 @@
 {
   "name": "angular-gapi",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Angular 6+ Google api module angular-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",

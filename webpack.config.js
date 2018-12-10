@@ -1,26 +1,23 @@
 var path = require('path');
 
 module.exports = {
-    entry: "./src/GoogleApiModule.ts",
+    entry: "./src/index.ts",
     output: {
         filename: "bundle.js"
     },
     devtool: 'source-map',
 
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
-        fallback: path.join(__dirname, "node_modules")
+        extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
     },
-    resolveLoader: {fallback: path.join(__dirname, "node_modules")},
+    resolveLoader: {
+    },
 
     module: {
-        loaders: [
-            {
-                test: /\.ts$/, loader: 'ts-loader'
-            }
-        ]
+        rules: [{
+            test: /\.ts$/,
+            loader: 'ts-loader',
+            exclude: path.join(__dirname, 'node_modules', 'zone.js', 'dist')
+        }]
     },
-    noParse: [
-        path.join(__dirname, 'node_modules', 'zone.js', 'dist')
-    ]
 };

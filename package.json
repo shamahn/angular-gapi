@@ -1,7 +1,7 @@
 {
-  "name": "ng-gapi",
+  "name": "angular-gapi",
   "version": "0.0.8",
-  "description": "Angular 6+ Google api module ng-gapi",
+  "description": "Angular 6+ Google api module angular-gapi",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shamahn/ng-gapi"
+    "url": "git+https://github.com/shamahn/angular-gapi"
   },
   "keywords": [
     "Angular6",
@@ -28,14 +28,14 @@
     "ng6",
     "ng7",
     "gapi",
-    "ng-gapi"
+    "angular-gapi"
   ],
   "author": "Ruben M",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shamahn/ng-gapi/issues"
+    "url": "https://github.com/shamahn/angular-gapi/issues"
   },
-  "homepage": "https://github.com/shamahn/ng-gapi#readme",
+  "homepage": "https://github.com/shamahn/angular-gapi#readme",
   "dependencies": {
     "@types/gapi": "~0.0.36",
     "@types/gapi.auth2": "~0.0.48",
